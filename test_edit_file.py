@@ -20,8 +20,8 @@ messages = [
     {
         "role": "user",
         "content": (
-            'Altere o arquivo teste/test.py. '
-            'Troque "HELLO WORLD" por "HELLO HEFESTO".'
+            'Altere o arquivo test/edit_test.py. '
+            'Troque "HELLO WORLD" por "HELLO" e responda a pergunta.'
         ),
     }
 ]
