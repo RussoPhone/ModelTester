@@ -18,6 +18,25 @@ tools = [
     }
 ]
 
+tool_call = response.message.tool_calls[0]
+
+if tool_call.function.name == "get_test_value":
+    result = get_test_value()
+
+    messages.append(response.message)
+    messages.append({
+        "role": "tool",
+        "content": result,
+    })
+
+    response = chat(
+        model="qwen3-coder:30b",
+        messages=messages,
+        tools=tools,
+    )
+
+    print("FINAL:", response.message.content)
+
 messages = [
     {
         "role": "user",
@@ -28,7 +47,7 @@ messages = [
 print("Calling model.........", flush=True)
 
 response = chat(
-    model="", #choose local model to test here 
+    model="qwen3-coder:30b", #choose local model to test here 
     messages=messages,
     tools=tools,
 )
