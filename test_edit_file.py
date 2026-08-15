@@ -21,7 +21,7 @@ messages = [
         "role": "user",
         "content": (
             'Altere o arquivo test/edit_test.py. '
-            'Troque "HELLO WORLD" por "HELLO" e responda a pergunta.'
+            'Troque "HELLO WORLD" por "HELLO" e "ARE YOU WORKING?" por "YES I AM".'
         ),
     }
 ]
