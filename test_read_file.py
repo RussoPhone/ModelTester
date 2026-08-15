@@ -29,7 +29,7 @@ tools = [
 messages = [
     {
         "role": "user",
-        "content": "Read the file teste.txt and tell me what number it contains.",
+        "content": "Read the file teste.txt and tell me what language it contains.",
     }
 ]
 
